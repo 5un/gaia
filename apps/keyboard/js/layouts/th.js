@@ -3,7 +3,10 @@ Keyboards.th = {
   shortLabel: 'Th',
   menuLabel: 'ไทย', /*ไทย*/
   basicLayoutKey: 'กขค', /*กขค*/
+  imEngine: 'thai',
   types: ['text', 'url', 'email'],
+  autoCorrectLanguage: 'th',
+  autoCorrectPunctuation: false,
   lang: 'th',
   pages: [ {                    // default page
     width: 11,

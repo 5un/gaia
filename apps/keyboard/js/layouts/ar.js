@@ -2,6 +2,8 @@ Keyboards.ar = {
   label: 'Arabic',
   shortLabel: 'Ar',
   menuLabel: 'العربية',
+  imEngine: 'arabic',
+  autoCorrectLanguage: 'ar',
   secondLayout: true,
   specificCssRule: true,
   types: ['text', 'url', 'email'],
