@@ -63,7 +63,7 @@ function CandidatePanelView(target, options, viewManager) {
 }
 
 // Default value for how many candidates shown in a row.
-CandidatePanelView.prototype.COUNT_PER_ROW = 8;
+CandidatePanelView.prototype.COUNT_PER_ROW = 16;
 
 CandidatePanelView.prototype.HEIGHT_IN_REM = 3.2;
 
