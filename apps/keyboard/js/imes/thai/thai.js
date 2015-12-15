@@ -5,7 +5,7 @@
 'use strict';
 
 /*
- * This Thai input method provides four forms of input assistance:
+ * This Thai input method provides three forms of input assistance:
  *
  * 1) word suggestions
  *
@@ -13,8 +13,6 @@
  *
  * 3) auto capitalization
  *
- * 4) punctuation assistance by converting space space to period space
- *    and by transposing space followed by punctuation.
  *
  * These input modifications are controlled by the type and inputmode
  * properties of the input element that has the focus. If inputmode is
@@ -214,7 +212,9 @@
 
     // Figure out what kind of input assistance we're providing for this
     // activation.
-    capitalizing = punctuating = (inputMode === 'latin-prose');
+    
+    capitalizing = punctuating = false
+
     suggesting = (options.suggest && inputMode !== 'verbatim');
     correcting = (options.correct && inputMode !== 'verbatim');
 
@@ -735,8 +735,9 @@
     // if the word before the cursor has changed since we requested
     // these suggestions. That is, if the user has typed faster than we could
     // offer suggestions, ignore them.
-    if (suggestions.length === 0 || wordBeforeCursor() !== input) {
-      keyboard.sendCandidates([]); // Clear any displayed suggestions
+    // suggestions.length === 0 || wordBeforeCursor() !== input
+    if (suggestions.length === 0) {
+      keyboard.sendCandidates([wordBeforeCursor()]); // Clear any displayed suggestions
       return;
     }
 
@@ -904,11 +905,18 @@
         !lengthMismatch) {
       // Remember the word to use if the next character is a space.
       autoCorrection = words[0];
-      // Mark the auto-correction so the renderer can highlight it
-      words[0] = '*' + words[0];
+      // Dont mark the auto-correction so the renderer can highlight it
+      // words[0] = '*' + words[0];
     }
     else {
       autoCorrection = null;
+    }
+
+    var inputWord = wordBeforeCursor();
+    if(inputWord !== undefined && inputWord.length > 0){
+        if(words.indexOf(inputWord) <= -1){
+          words.splice(0, 0, inputWord);
+        }
     }
 
     keyboard.sendCandidates(words);

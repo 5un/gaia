@@ -268,7 +268,14 @@ LayoutPageView.prototype.createCandidatePanel = function(inputMethodName) {
       candidatePanel =
         new LatinCandidatePanelView(target, options, this.viewManager);
       break;
-
+    
+    /*
+    case 'thai':
+      options.widthUnit = 1;
+      candidatePanel =
+        new LatinCandidatePanelView(target, options, this.viewManager);
+      break;
+    */
     case 'vietnamese':
       options.widthUnit = 1;
       candidatePanel =
