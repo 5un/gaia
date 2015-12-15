@@ -39,12 +39,9 @@ Keyboards['th-senze'] = {
         ]
       ]
     },
-    {                    // default page
+    { // Char 2
       width: 11,
       secondLayout: true,
-      alt: {
-        'ช': ['๏', '๚', '๛']
-      },
       keys: [
         [
           { value: 'ฆ' }, { value: 'ซ' }, { value: 'ฌ' }, { value: 'ฎ' },
@@ -56,8 +53,8 @@ Keyboards['th-senze'] = {
           { value: 'ั' }, { value: 'ำ' }, { value: 'ใ' }
         ], [
           { value: 'ไ' }, { value: 'ๆ' }, { value: '์' }, { value: 'ู' },
-          { value: 'ุ' }, { value: 'ฤ' }, { value: 'ฦ' }, { value: 'x' },
-          { value: 'x' }, { value: 'x' }, { value: 'x' }
+          { value: 'ุ' }, { value: 'ฤ' }, { value: 'ฦ' }, { value: '!' },
+          { value: '?' }, { value: '@' }, { value: '=' }
         ], [
           /* { value: '<<', keyCode: KeyEvent.DOM_VK_ALT, targetPage: 2 },*/
           { value: 'อื่นๆ', ratio: 1,keyCode: KeyEvent.DOM_VK_ALT, targetPage: 2 },
@@ -71,7 +68,7 @@ Keyboards['th-senze'] = {
         ]
       ]
     },
-    {                    // default page
+    { // Signs Page
       width: 11,
       secondLayout: true,
       keys: [

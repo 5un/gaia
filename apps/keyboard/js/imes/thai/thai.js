@@ -124,6 +124,20 @@
   // U+FFFC is the placeholder character for non-text object
   var WORDSEP = /^[\s.,?!;:\ufffc]+$/;
 
+  var PUNCTUATIONS = [
+    SPACE,
+    RETURN, 
+    PERIOD, 
+    QUESTION, 
+    EXCLAMATION, 
+    COMMA, 
+    COLON, 
+    SEMICOLON, 
+    ATPERSAND, 
+    DOUBLEQUOTE, 
+    CLOSEPAREN
+  ];
+
   var DOUBLE_SPACE_TIME = 700; // ms between spaces to convert to ". "
 
   // Don't offer to autocorrect unless we're reasonably certain that the
@@ -572,9 +586,13 @@
 
         // If there's a space, start a new word after space.
         // TODO apply for any punctuation sign
-        if(keycode === SPACE){
-          wordStartPosition = cursor;
+        
+        // If Keycode is a punctuation character, start a new word
+        
+        if( PUNCTUATIONS.indexOf(keycode) > -1 ){
+            wordStartPosition = cursor;
         }
+        
       }
 
     }, function() {
