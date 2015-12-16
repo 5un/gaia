@@ -25,7 +25,7 @@ button::-moz-focus-inner {
   bottom: 0;
   z-index: 15;
   width: 100%;
-  background-color: red; /* User should not see this */
+  background-color: gray; /* User should not see this */
   pointer-events: auto;
   visibility: visible;
 }

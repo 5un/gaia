@@ -62,6 +62,8 @@ ViewUtils.fitText = function(container, text, length, totalWidth) {
   // If the text does not fit within the scaling limit,
   // reduce the length of the text by replacing characters in
   // the middle with ...
+  // TODO Fix This
+  /*
   if (scale < limit) {
     var charactersReplaced = text.length % 2;
     while (scale < limit && charactersReplaced < text.length - 2) {
@@ -73,6 +75,7 @@ ViewUtils.fitText = function(container, text, length, totalWidth) {
       scale = ViewUtils.getScale(text, textWidth);
     }
   }
+  */
 
   // The scaling and centering we do only works if the span
   // is display:block or inline-block
