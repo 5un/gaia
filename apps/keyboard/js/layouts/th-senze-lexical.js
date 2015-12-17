@@ -15,7 +15,7 @@ Keyboards['th-senze-lexical'] = {
       secondLayout: true,
       keys: [
         [
-          { value: 'ก' }, { value: 'ฃ' }, { value: 'ค' }, { value: 'ง' },
+          { value: 'ก' }, { value: 'ข' }, { value: 'ค' }, { value: 'ง' },
           { value: 'จ' }, { value: 'ฉ' }, { value: 'ช' }, { value: 'ด' },
           { value: 'ต' }, { value: 'ถ' }, { value: 'ท' }
         ], [
