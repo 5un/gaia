@@ -119,6 +119,9 @@ UserPressManager.prototype.handleEvent = function(evt) {
     case 'touchstart':
       // Let the world know that we're using touch events and we should
       // not handle any presses from mouse events.
+      
+      //TODO Experimental: Ignore Touch
+      /*
       this._ignoreMouseEvents = true;
 
       touchstartCount = this.touchstartCounts.get(evt.target) || 0;
@@ -141,9 +144,13 @@ UserPressManager.prototype.handleEvent = function(evt) {
 
         this._handleNewPress(el, touch, touchId);
       }
+      */
       break;
 
     case 'touchmove':
+
+      //TODO Experimental: Ignore Touch
+      /*
       for (i = 0; i < evt.changedTouches.length; i++) {
         touch = evt.changedTouches[i];
         touchId = touch.identifier;
@@ -156,10 +163,14 @@ UserPressManager.prototype.handleEvent = function(evt) {
 
         this._handleChangedPress(el, touch, touchId);
       }
+      */
       break;
 
     case 'touchend': /* fall through */
     case 'touchcancel':
+
+      //TODO Experimental: Ignore Touch
+      /*
       touchstartCount = this.touchstartCounts.get(evt.target);
       touchstartCount--;
       if (touchstartCount) {
@@ -185,6 +196,7 @@ UserPressManager.prototype.handleEvent = function(evt) {
         el = document.elementFromPoint(touch.clientX, touch.clientY);
         this._handleFinishPress(el, touch, touchId);
       }
+      */
       break;
 
     case 'mousedown':
