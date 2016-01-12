@@ -193,8 +193,10 @@ LayoutManager.prototype._updateCurrentPage = function() {
   var enterKeyFindResult = this._findKey(page, KeyboardEvent.DOM_VK_RETURN);
   var enterKeyCount = enterKeyFindResult.keyCount;
   // Assume the [Enter] is at the same row as the space key
-  var enterKeyObject = page.keys[spaceKeyRowCount][enterKeyCount] =
-    Object.create(page.keys[spaceKeyRowCount][enterKeyCount]);
+  
+  var enterKeyObject;
+  //var enterKeyObject = page.keys[spaceKeyRowCount][enterKeyCount] =
+  //  Object.create(page.keys[spaceKeyRowCount][enterKeyCount]);
 
   // Keep the pageSwitchingKey here, because we may need to modify its ratio
   // at the end.

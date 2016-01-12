@@ -33,11 +33,11 @@ Keyboards['th-senze'] = {
         { value: 'ป' }, { value: 'แ' }, { value: 'อ' }, { value: 'ิ' },
         { value: 'ื' }, { value: 'ท' }, { value: 'ม' },
         { value: 'ใ' }, { value: 'ฝ' },
-        { value: '⌫', keyCode: KeyEvent.DOM_VK_BACK_SPACE }
+        { value: '↵', keyCode: KeyEvent.DOM_VK_RETURN }
       ], [
         { value: '&nbsp', ratio: 6, keyCode: KeyboardEvent.DOM_VK_SPACE },
         { value: '×', ratio: 2, keyCode: KeyEvent.DOM_VK_CANCEL },
-        { value: '↵', ratio: 2, keyCode: KeyEvent.DOM_VK_RETURN }
+        { value: '⌫', ratio: 2, keyCode: KeyEvent.DOM_VK_BACK_SPACE }
       ]
     ],
     upperCase: {

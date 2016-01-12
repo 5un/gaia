@@ -1,30 +1,29 @@
-Keyboards['en-senze'] = {
-  label: 'English Senze',
-  shortLabel: 'En',
+Keyboards.it = {
+  label: 'Italian',
+  shortLabel: 'It',
+  menuLabel: 'Italiano',
   imEngine: 'latin',
   types: ['text', 'url', 'email', 'password'],
-  autoCorrectLanguage: 'en_us',
-  menuLabel: 'English',
-  lang: 'en-senze',
+  autoCorrectLanguage: 'it',
+  lang: 'it',
   alt: {
-    a: 'áàâäåãāæ',
-    c: 'çćč',
-    e: 'éèêëēę€ɛ',
-    i: 'ïíìîīį',
-    o: 'öõóòôōœøɵ',
-    u: 'üúùûū',
-    s: 'ßśš$',
-    S: 'ŚŠ$',
-    n: 'ñń',
-    l: 'ł£',
-    y: 'ÿ¥',
-    z: 'žźż',
-    '.': ',?!;:…'
+    a: 'à@',
+    c: 'ç',
+    e: 'èéê€',
+    i: 'ì',
+    o: 'òó',
+    u: 'ù',
+    s: '$',
+    l: '£',
+    y: '¥',
+    '.': ',;:\'?!…',
+    "'": '"«»',
+    '-': '—_'
   },
   keys: [
     [
-      { value: 'q' }, { value: 'w' }, { value: 'e' }, { value: 'r' },
-      { value: 't' }, { value: 'y' }, { value: 'u' }, { value: 'i' },
+      { value: 'q' }, { value: 'w' }, { value: 'e' } , { value: 'r' },
+      { value: 't' }, { value: 'y' }, { value: 'u' } , { value: 'i' },
       { value: 'o' }, { value: 'p' }
     ], [
       { value: 'a' }, { value: 's' }, { value: 'd' }, { value: 'f' },
@@ -36,30 +35,31 @@ Keyboards['en-senze'] = {
       { value: 'b' }, { value: 'n' }, { value: 'm' },
       { value: '↵', ratio: 1.5, keyCode: KeyEvent.DOM_VK_RETURN }
     ], [
-      { value: '&nbsp', ratio: 6, keyCode: KeyboardEvent.DOM_VK_SPACE },
-      { value: '×', ratio: 2, keyCode: KeyEvent.DOM_VK_CANCEL },
+      { value: '&nbsp', ratio: 8, keyCode: KeyboardEvent.DOM_VK_SPACE },
       { value: '⌫', ratio: 2, keyCode: KeyEvent.DOM_VK_BACK_SPACE }
     ]
   ],
   pages: [undefined, {
     alt: {
-      '1': ['¹', '1st'],
-      '2': ['²', '2nd'],
-      '3': ['³', '3rd'],
-      '4': ['⁴', '4th'],
-      '5': ['⁵', '5th'],
-      '6': ['⁶', '6th'],
-      '7': ['⁷', '7th'],
-      '8': ['⁸', '8th'],
-      '9': ['⁹', '9th'],
-      '0': ['⁰', 'º'],
-      '$': [ '€', '£', '¢', '¥'],
+      '0': ['º'],
+      '1': ['1°', '1ª'],
+      '2': ['2°', '2ª'],
+      '3': ['3°', '3ª'],
+      '4': ['4°', '4ª'],
+      '5': ['5°', '5ª'],
+      '6': ['6°', '6ª'],
+      '7': ['7°', '7ª'],
+      '8': ['8°', '8ª'],
+      '9': ['9°', '9ª'],
+      '€': [ '$', '£', '¢', '¥'],
       '"': ['“', '”'],
       '\'':['‘', '’'],
       '?': ['¿'],
       '!': ['¡'],
-      '+': ['-', '×', '÷', '±']
+      '+': ['-', '×', '÷', '±'],
+      '.': '·'
     },
+    // These are based on the en layout with $ localized.
     keys: [
       [
         { value: '1' }, { value: '2' }, { value: '3' }, { value: '4' },
@@ -67,7 +67,7 @@ Keyboards['en-senze'] = {
         { value: '9' }, { value: '0' }
       ], [
         { value: '@' }, { value: '#' },
-        { value: '$', className: 'alternate-indicator' }, { value: '&' },
+        { value: '€', className: 'alternate-indicator' }, { value: '&' },
         { value: '*' }, { value: '-' }, { value: '_' }, { value: '/' },
         { value: '(' }, { value: ')' }
       ], [
@@ -84,8 +84,7 @@ Keyboards['en-senze'] = {
         { value: '\'' }, { value: '!' }, { value: '?' },
         { value: '↵', ratio: 1.5, keyCode: KeyEvent.DOM_VK_RETURN }
       ], [
-        { value: '&nbsp', ratio: 6, keyCode: KeyboardEvent.DOM_VK_SPACE },
-        { value: '×', ratio: 2, keyCode: KeyEvent.DOM_VK_CANCEL },
+        { value: '&nbsp', ratio: 8, keyCode: KeyboardEvent.DOM_VK_SPACE },
         { value: '⌫', ratio: 2, keyCode: KeyEvent.DOM_VK_BACK_SPACE }
       ]
     ]
