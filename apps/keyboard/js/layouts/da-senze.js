@@ -1,4 +1,4 @@
-Keyboards.da = {
+Keyboards['da-senze'] = {
   label: 'Danish',
   shortLabel: 'Da',
   menuLabel: 'Dansk',

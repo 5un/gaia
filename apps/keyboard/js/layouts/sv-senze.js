@@ -1,4 +1,4 @@
-Keyboards.sv = {
+Keyboards['sv-senze'] = {
   label: 'Swedish',
   shortLabel: 'Sv',
   menuLabel: 'Svenska',

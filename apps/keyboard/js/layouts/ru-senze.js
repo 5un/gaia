@@ -1,4 +1,4 @@
-Keyboards.ru = {
+Keyboards['ru-senze'] = {
   label: 'Russian',
   shortLabel: 'Ru',
   menuLabel: 'Pусский',

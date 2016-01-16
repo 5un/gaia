@@ -1,11 +1,13 @@
-Keyboards.my = {
+Keyboards['my-senze'] = {
   label: 'Myanmar',
   shortLabel: 'My',
   menuLabel: '\u1019\u103C\u1014\u103A\u1019\u102C', /*မြန်မာ*/
   basicLayoutKey: '\u1000\u1001\u1002', /*ကခဂ*/
   alternateLayoutKey: '\u1041\u1042\u1043', /*၁၂၃*/
-  imEngine: 'myanmar',
+  imEngine: 'thai',
   types: ['text', 'url', 'email'],
+  autoCorrectLanguage: 'my',
+  autoCorrectPunctuation: false,
   lang: 'my',
   pages: [ {
     secondLayout: true,

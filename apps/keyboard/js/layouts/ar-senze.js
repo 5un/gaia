@@ -1,4 +1,4 @@
-Keyboards.ar = {
+Keyboards['ar-senze'] = {
   label: 'Arabic',
   shortLabel: 'Ar',
   menuLabel: 'العربية',

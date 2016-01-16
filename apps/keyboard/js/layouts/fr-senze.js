@@ -1,4 +1,4 @@
-Keyboards.fr = {
+Keyboards['fr-senze'] = {
   label: 'French',
   shortLabel: 'Fr',
   menuLabel: 'Français',

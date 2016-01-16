@@ -5,7 +5,7 @@ Keyboards.km = {
   basicLayoutKey: 'ខ្មែរ', /*กขค*/
   imEngine: 'thai',
   types: ['text', 'url', 'email'],
-  autoCorrectLanguage: 'th',
+  autoCorrectLanguage: 'km',
   autoCorrectPunctuation: false,
   lang: 'km',
   pages: [ 
@@ -19,7 +19,6 @@ Keyboards.km = {
           { value: '៩' }, { value: '០' },
           { value: 'គ'}, { value: 'ធ'}
         ], [
-
           { value: 'ឆ' }, { value: 'ឹ' }, { value: 'េ' }, { value: 'រ' },
           { value: 'ត' }, { value: 'យ' }, { value: 'ុ' }, { value: 'ិ' },
           { value: 'ោ' }, { value: 'ផ' }, { value: 'ៀ' }, { value: 'ឨ' }          

@@ -5,7 +5,7 @@ Keyboards.la = {
   basicLayoutKey: 'ກຂຄ', /*กขค*/
   imEngine: 'thai',
   types: ['text', 'url', 'email'],
-  autoCorrectLanguage: 'th',
+  autoCorrectLanguage: 'la',
   autoCorrectPunctuation: false,
   lang: 'la',
   pages: [ 
