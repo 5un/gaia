@@ -150,7 +150,7 @@
   // an autocorrect action
   var MIN_LENGTH_MISMATCH_THRESHOLD = 5;
 
-  var USER_DICT_DB_NAME = 'UserDictThai';
+  var USER_DICT_DB_NAME = 'UserDictLatin';
 
   // Predictions from user dictionary need to have weight larger than this in
   // order to take precedence over built-in dictionary predictions

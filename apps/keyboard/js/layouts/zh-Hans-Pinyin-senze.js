@@ -1,4 +1,4 @@
-Keyboards['zh-Hans-Pinyin'] = {
+Keyboards['zh-Hans-Pinyin-senze'] = {
   label: 'Chinese - Simplified - Pinyin',
   shortLabel: '拼',
   menuLabel: '拼音',
@@ -34,7 +34,8 @@ Keyboards['zh-Hans-Pinyin'] = {
         { value: 'n' }, { value: 'm' },
         { value: '↵', ratio: 1.5, keyCode: KeyEvent.DOM_VK_RETURN }
       ], [
-        { value: '&nbsp', keyCode: KeyEvent.DOM_VK_SPACE, ratio: 8 },
+        { value: '&nbsp', keyCode: KeyEvent.DOM_VK_SPACE, ratio: 6 },
+        { value: '×', ratio: 2, keyCode: KeyEvent.DOM_VK_CANCEL },
         { value: '⌫', ratio: 2, keyCode: KeyEvent.DOM_VK_BACK_SPACE }
       ]
     ]

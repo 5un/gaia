@@ -70,7 +70,8 @@ Keyboards['my-senze'] = {
         { value: '\u102C'/*ာ*/ }, { value: '\u101B'/*ရ*/},
         { value: '↵', ratio: 1.5, keyCode: KeyEvent.DOM_VK_RETURN }
       ], [
-        { value: '&nbsp', ratio: 9, keyCode: KeyboardEvent.DOM_VK_SPACE },
+        { value: '&nbsp', ratio: 6, keyCode: KeyboardEvent.DOM_VK_SPACE },
+        { value: '×', ratio: 2, keyCode: KeyEvent.DOM_VK_CANCEL },
         { value: '⌫', ratio: 2, keyCode: KeyEvent.DOM_VK_BACK_SPACE }
       ]
     ]
@@ -133,7 +134,8 @@ Keyboards['my-senze'] = {
         { value: '?' }, { value: ':' }, {value: ';' },
         { value: '↵', ratio: 1.5, keyCode: KeyEvent.DOM_VK_RETURN }
       ], [
-        { value: '&nbsp', ratio: 8, keyCode: KeyboardEvent.DOM_VK_SPACE },
+        { value: '&nbsp', ratio: 6, keyCode: KeyboardEvent.DOM_VK_SPACE },
+        { value: '×', ratio: 2, keyCode: KeyEvent.DOM_VK_CANCEL },
         { value: '⌫', ratio: 2, keyCode: KeyEvent.DOM_VK_BACK_SPACE }
       ]
     ]
