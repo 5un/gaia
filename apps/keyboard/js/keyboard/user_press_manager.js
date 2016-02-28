@@ -166,10 +166,12 @@ UserPressManager.prototype.handleEvent = function(evt) {
       */
       break;
 
-    case 'touchend': /* fall through */
-    case 'touchcancel':
+
+    //case 'touchend': /* fall through */
+    //case 'touchcancel':
 
       //TODO Experimental: Ignore Touch
+      
       /*
       touchstartCount = this.touchstartCounts.get(evt.target);
       touchstartCount--;
@@ -196,8 +198,9 @@ UserPressManager.prototype.handleEvent = function(evt) {
         el = document.elementFromPoint(touch.clientX, touch.clientY);
         this._handleFinishPress(el, touch, touchId);
       }
-      */
+      
       break;
+      */
 
     case 'mousedown':
       // Prevent loosing focus to the currently focused app
@@ -216,6 +219,8 @@ UserPressManager.prototype.handleEvent = function(evt) {
       this._container.addEventListener('mousemove', this);
       this._container.addEventListener('mouseup', this);
       this._container.addEventListener('mouseleave', this);
+      this._container.addEventListener('touchend', this);
+      this._container.addEventListener('touchcancel', this);
       this._handleNewPress(evt.target, evt, '_mouse');
       break;
 
@@ -227,6 +232,8 @@ UserPressManager.prototype.handleEvent = function(evt) {
       this._handleChangedPress(evt.target, evt, '_mouse');
       break;
 
+    case 'touchend': /* fall through */
+    case 'touchcancel': /* fall through */
     case 'mouseup': /* fall through */
     case 'mouseleave':
       // Stop monitoring so there won't be mouse event sequences involving
@@ -234,6 +241,8 @@ UserPressManager.prototype.handleEvent = function(evt) {
       this._container.removeEventListener('mousemove', this);
       this._container.removeEventListener('mouseup', this);
       this._container.removeEventListener('mouseleave', this);
+      this._container.removeEventListener('touchend', this);
+      this._container.removeEventListener('touchcancel', this);
 
       this._handleFinishPress(evt.target, evt, '_mouse');
       break;
