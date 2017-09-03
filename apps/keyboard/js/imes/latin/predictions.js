@@ -84,7 +84,8 @@ var Predictions = function() {
   // received, but we don't want that as a suggestion if the user just
   // type r. We want things like red and run. So for each extra character
   // we have to add, we multiply the weight by this amount.
-  var WORD_EXTENSION_MULTIPLIER = 0.4;
+  // var WORD_EXTENSION_MULTIPLIER = 0.4;
+  var WORD_EXTENSION_MULTIPLIER = 0.90;
 
   // How many candidates do we consider before pausing with a setTimeout()?
   // Smaller values make the prediction code more interruptible and
